@@ -190,9 +190,9 @@ export default function About() {
                                 <i className="fa-regular fa-envelope"></i>
                                 تواصل معنا
                             </a> 
-                            <link to={"/blog"} className="btn-cta-secondary">
+                            <Link to={"/blog"} className="btn-cta-secondary">
                                 تصفح المقالات
-                            </link> 
+                            </Link> 
                         </div>
                     </div>
                 </div>
