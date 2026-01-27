@@ -13,16 +13,16 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import BlogArticlePage from './pages/BlogArticlePage/BlogArticlePage.jsx'
 
 const routes = createBrowserRouter([
-    {path: "./", element: <Layout/>, children: [
-        {path: "./", element: <Home/>},
-        {path: "./about", element: <About/>},
-        {path: "./blog", element: <Blog/>},
-        {path: "./blog/:slug", element: <BlogArticlePage />},
-        {path: './*', element: <NotFound />},
-        {path:'./404', element: <NotFound />}
-    ]},
-    
-])
+    {path: "", element: <Layout/>, children: [
+        {path: "", element: <Home/>},
+        {path: "about", element: <About/>},
+        {path: "blog", element: <Blog/>},
+        {path: "blog/:slug", element: <BlogArticlePage />},
+        {path: '*', element: <NotFound />},
+    ]}, 
+], {
+    basename: "/Adaasa"
+})
 
 createRoot(document.getElementById('root')).render(
   <>
