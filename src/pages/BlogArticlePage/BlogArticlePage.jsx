@@ -266,7 +266,7 @@ export default function BlogArticlePage() {
                             <div className="row g-4">
                                 {recommendPosts.map((article) => (
                                     <div key={article.id} className="col-12 col-sm-6 col-lg-4">
-                                        <Link href={`/blog/${article.slug}`} className="related-card">
+                                        <Link to={`/blog/${article.slug}`} onClick={() => window.scrollTo({top : 0, left :0, behavior : "smooth"})} className="related-card">
                                             <div className="related-card-image">
                                                 <img src={article.image} alt={article.title} />
                                                 <div className="related-card-overlay"></div>

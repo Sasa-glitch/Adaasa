@@ -190,7 +190,7 @@ export default function About() {
                                 <i className="fa-regular fa-envelope"></i>
                                 تواصل معنا
                             </a> 
-                            <Link to={"/blog"} className="btn-cta-secondary">
+                            <Link to={"/blog"} className="btn-cta-secondary" onClick={() => window.scrollTo({top : 0, left :0, behavior : "smooth"})}>
                                 تصفح المقالات
                             </Link> 
                         </div>

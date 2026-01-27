@@ -33,11 +33,11 @@ export default function Home() {
                         </p>
                         
                         <div className="d-flex flex-column flex-sm-row justify-content-center gap-3 mb-5">
-                            <Link a={"/blog"} className="btn-hero-primary">
+                            <Link to={"/blog"} className="btn-hero-primary" onClick={() => window.scrollTo({top : 0, left :0, behavior : "smooth"})}>
                                 <span>استكشف المقالات</span>
                                 <i className="fa-solid fa-arrow-left"></i>
                             </Link>
-                            <Link a={"/about"} className="btn-hero-secondary">
+                            <Link to={"/about"} className="btn-hero-secondary" onClick={() => window.scrollTo({top : 0, left :0, behavior : "smooth"})}>
                                 <i className="fa-solid fa-circle-info"></i>
                                 <span>اعرف المزيد</span>
                             </Link>
