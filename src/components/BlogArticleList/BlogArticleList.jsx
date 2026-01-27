@@ -5,7 +5,7 @@ export default function BlogArticleList(props) {
   return (
     <div className="container-fluid mt-4">
         <article className="blog-card-list p-0">
-            <Link href="/blog/portrait-photography-secrets" className="row">
+            <Link to={"/blog/portrait-photography-secrets"} className="row">
                 <div className="col-12 col-md-auto">
                     <div className="blog-card-list-image">
                         <img src={props.post.image} alt={props.post.title}/>

@@ -5,7 +5,7 @@ export default function RecentArticle(props) {
   return (
     <div className="col-12 col-md-6 col-lg-4">
         <article className="blog-card">
-            <Link href={`/blog/${props.post.slug}`}>
+            <Link a={`/blog/${props.post.slug}`}>
                 <div className="blog-card-image">
                     <img src={props.post.image} alt={props.post.title} />
                     <div className="image-overlay"></div>

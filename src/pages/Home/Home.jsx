@@ -33,11 +33,11 @@ export default function Home() {
                         </p>
                         
                         <div className="d-flex flex-column flex-sm-row justify-content-center gap-3 mb-5">
-                            <Link href="/blog" className="btn-hero-primary">
+                            <Link a={"/blog"} className="btn-hero-primary">
                                 <span>استكشف المقالات</span>
                                 <i className="fa-solid fa-arrow-left"></i>
                             </Link>
-                            <Link href="/about" className="btn-hero-secondary">
+                            <Link a={"/about"} className="btn-hero-secondary">
                                 <i className="fa-solid fa-circle-info"></i>
                                 <span>اعرف المزيد</span>
                             </Link>
@@ -92,7 +92,7 @@ export default function Home() {
                             <h2 className="section-title">مقالات مختارة</h2>
                             <p className="section-subtitle">محتوى منتقى لبدء رحلة تعلمك</p>
                         </div>
-                        <Link href="/blog" className="btn-view-all">
+                        <Link a={"/blog"} className="btn-view-all">
                             عرض الكل
                             <i className="fa-solid fa-arrow-left"></i>
                         </Link>
@@ -121,7 +121,7 @@ export default function Home() {
 
                     <div className="row g-4">
                         <div className="col-6 col-md-3">
-                            <Link href="/blog?category=إضاءة" className="category-card">
+                            <Link to={"/blog?category=إضاءة"} className="category-card">
                                 <div className="category-overlay"></div>
                                 <div className="category-content">
                                     <div className="category-icon-wrapper">
@@ -136,7 +136,7 @@ export default function Home() {
                             </Link>
                         </div>
                         <div className="col-6 col-md-3">
-                            <Link href="/blog?category=بورتريه" className="category-card">
+                            <Link to={"/blog?category=بورتريه"} className="category-card">
                                 <div className="category-overlay"></div>
                                 <div className="category-content">
                                     <div className="category-icon-wrapper">
@@ -151,7 +151,7 @@ export default function Home() {
                             </Link>
                         </div>
                         <div className="col-6 col-md-3">
-                            <Link href="/blog?category=مناظر طبيعية" className="category-card">
+                            <Link to={"/blog?category=مناظر طبيعية"} className="category-card">
                                 <div className="category-overlay"></div>
                                 <div className="category-content">
                                     <div className="category-icon-wrapper">
@@ -166,7 +166,7 @@ export default function Home() {
                             </Link>
                         </div>
                         <div className="col-6 col-md-3">
-                            <Link href="/blog?category=تقنيات" className="category-card">
+                            <Link to={"/blog?category=تقنيات"} className="category-card">
                                 <div className="category-overlay"></div>
                                 <div className="category-content">
                                     <div className="category-icon-wrapper">
@@ -181,7 +181,7 @@ export default function Home() {
                             </Link>
                         </div>
                         <div className="col-6 col-md-3">
-                            <Link href="/blog?category=معدات" className="category-card">
+                            <Link to={"/blog?category=معدات"} className="category-card">
                                 <div className="category-overlay"></div>
                                 <div className="category-content">
                                     <div className="category-icon-wrapper">
@@ -214,7 +214,7 @@ export default function Home() {
                             <h2 className="section-title">أحدث المقالات</h2>
                             <p className="section-subtitle">محتوى جديد طازج من المطبعة</p>
                         </div>
-                        <Link href="/blog" className="text-link">
+                        <Link to={"/blog"} className="text-link">
                             عرض جميع المقالات
                             <i className="fa-solid fa-arrow-left"></i>
                         </Link>

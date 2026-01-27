@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export default function Article(props) {
   return (
     <article className="featured-article">
-        <Link href={`/blog/${props.post.slug}`} className="row g-0">
+        <Link to={`/blog/${props.post.slug}`} className="row g-0">
             <div className="col-md-6">
                 <div className="featured-image">
                     <img src={props.post.image} alt={props.post.title} />

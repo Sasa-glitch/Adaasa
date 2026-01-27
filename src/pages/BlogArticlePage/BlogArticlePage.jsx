@@ -52,11 +52,11 @@ export default function BlogArticlePage() {
                         {/* Breadcrumb */}
                         <div className="article-breadcrumb-wrapper p-0">
                             <nav className="article-breadcrumb">
-                                <Link href="/" className="breadcrumb-link">
+                                <Link to={"/"} className="breadcrumb-link">
                                     <i className="fa-solid fa-home"></i>
                                 </Link>
                                 <i className="fa-solid fa-chevron-left breadcrumb-separator"></i>
-                                <Link href="/blog" className="breadcrumb-link">المدونة</Link>
+                                <Link to={"/blog"} className="breadcrumb-link">المدونة</Link>
                                 <i className="fa-solid fa-chevron-left breadcrumb-separator"></i>
                                 <span className="breadcrumb-active">{post.category}</span>
                             </nav>
@@ -66,7 +66,7 @@ export default function BlogArticlePage() {
                         <div className="article-header">
                             <div className="container-lg">
                                 <div className="article-meta mb-4">
-                                    <Link href="/blog?category=تقنيات" className="article-category-badge">
+                                    <Link to={"/blog?category=تقنيات"} className="article-category-badge">
                                         {post.category}
                                     </Link>
                                     <div className="d-flex align-items-center gap-4 article-meta-info">
@@ -202,7 +202,7 @@ export default function BlogArticlePage() {
                                         </div>
                                         <nav className="toc-nav">
                                             {sectionsArr.map((title, index) => (
-                                                <Link key={title} href={`#section-${index}`} className="toc-link">
+                                                <Link key={title} to={`#section-${index}`} className="toc-link">
                                                     <span className="toc-number">{index + 1}</span>
                                                     <span className="toc-text">{title}</span>
                                                 </Link>
@@ -238,7 +238,7 @@ export default function BlogArticlePage() {
                                             </div>
                                             <h3 className="cta-title">لا تفوّت جديدنا</h3>
                                             <p className="cta-text">اشترك للحصول على أحدث المقالات</p>
-                                            <Link href="/blog" className="cta-btn">تصفح المزيد</Link>
+                                            <Link to={"/blog"} className="cta-btn">تصفح المزيد</Link>
                                         </div>
                                     </div>
                                 </div>
@@ -257,7 +257,7 @@ export default function BlogArticlePage() {
                                         <p className="related-subtitle">استكشف المزيد من المحتوى المميز</p>
                                     </div>
                                 </div>
-                                <Link href="/blog" className="related-link d-none d-sm-flex">
+                                <Link to={"/blog"} className="related-link d-none d-sm-flex">
                                     عرض الكل
                                     <i className="fa-solid fa-arrow-left"></i>
                                 </Link>

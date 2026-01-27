@@ -6,7 +6,7 @@ export default function BlogArticle(props) {
   return (
     <div className="col-12 col-md-6 col-lg-4 d-flex">
         <article className="blog-card d-flex flex-fill">
-            <Link className='flex-fill d-flex flex-column' href={`/blog/${props.post.slug}`}>
+            <Link className='flex-fill d-flex flex-column' to={`/blog/${props.post.slug}`}>
                 <div className="blog-card-image">
                     <img src={props.post.image} alt={props.post.title} />
                     <div className="image-overlay"></div>

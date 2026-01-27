@@ -157,15 +157,15 @@ export default function About() {
                                     <h3 className="team-name">{member.name}</h3>
                                     <p className="team-role">{member.role}</p>
                                     <div className="team-socials">
-                                        <link href="#" className="team-social-link" aria-label="Twitter">
+                                        <a href="#" className="team-social-link" aria-label="Twitter">
                                             <i className="fa-brands fa-x-twitter"></i>
-                                        </link> 
-                                        <link href="#" className="team-social-link team-social-github" aria-label="GitHub">
+                                        </a> 
+                                        <a href="#" className="team-social-link team-social-github" aria-label="GitHub">
                                             <i className="fa-brands fa-github"></i>
-                                        </link> 
-                                        <link href="#" className="team-social-link team-social-linkedin" aria-label="LinkedIn">
+                                        </a> 
+                                        <a href="#" className="team-social-link team-social-linkedin" aria-label="LinkedIn">
                                             <i className="fa-brands fa-linkedin"></i>
-                                        </link> 
+                                        </a> 
                                     </div>
                                 </div>
                             </div>
@@ -186,11 +186,11 @@ export default function About() {
                             نحب أن نسمع منك. سواء كان لديك سؤال حول محتوانا، أو تريد المساهمة، أو تريد فقط إلقاء التحية، لا تتردد في التواصل.
                         </p>
                         <div className="d-flex flex-column flex-sm-row justify-content-center gap-3">
-                            <link href="mailto:hello@adasah.com" className="btn-cta-primary">
+                            <a href="mailto:hello@adasah.com" className="btn-cta-primary">
                                 <i className="fa-regular fa-envelope"></i>
                                 تواصل معنا
-                            </link> 
-                            <link href="/blog" className="btn-cta-secondary">
+                            </a> 
+                            <link to={"/blog"} className="btn-cta-secondary">
                                 تصفح المقالات
                             </link> 
                         </div>

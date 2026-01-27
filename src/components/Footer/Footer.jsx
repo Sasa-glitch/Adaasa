@@ -11,28 +11,28 @@ export default function Footer() {
                 <div className="row g-5">
                     {/* Brand Section */}
                     <div className="col-12 col-lg-3">
-                        <link href="/" className="d-flex align-items-center gap-3 mb-4 footer-brand">
+                        <Link to={"/"} className="d-flex align-items-center gap-3 mb-4 footer-brand">
                             <div className="footer-logo">
                                 <span>ع</span>
                             </div>
                             <span className="h5 mb-0 text-white">عدسة</span>
-                        </link> 
+                        </Link> 
                         <p className="footer-description mb-4">
                             مدونة متخصصة في فن التصوير الفوتوغرافي، نشارك معكم أسرار المحترفين ونصائح عملية لتطوير مهاراتكم.
                         </p>
                         <div className="d-flex gap-2">
-                            <link href="https://twitter.com/adasah" target="_blank" rel="noopener noreferrer" className="footer-social-link" aria-label="twitter">
+                            <a href="https://twitter.com/adasah" target="_blank" rel="noopener noreferrer" className="footer-social-link" aria-label="twitter">
                                 <i className="fa-brands fa-x-twitter"></i>
-                            </link> 
-                            <link href="https://github.com/adasah" target="_blank" rel="noopener noreferrer" className="footer-social-link" aria-label="github">
+                            </a> 
+                            <a href="https://github.com/adasah" target="_blank" rel="noopener noreferrer" className="footer-social-link" aria-label="github">
                                 <i className="fa-brands fa-github"></i>
-                            </link> 
-                            <link href="https://linkedin.com/company/adasah" target="_blank" rel="noopener noreferrer" className="footer-social-link" aria-label="linkedin">
+                            </a> 
+                            <a href="https://linkedin.com/company/adasah" target="_blank" rel="noopener noreferrer" className="footer-social-link" aria-label="linkedin">
                                 <i className="fa-brands fa-linkedin"></i>
-                            </link> 
-                            <link href="https://youtube.com/@adasah" target="_blank" rel="noopener noreferrer" className="footer-social-link" aria-label="youtube">
+                            </a> 
+                            <a href="https://youtube.com/@adasah" target="_blank" rel="noopener noreferrer" className="footer-social-link" aria-label="youtube">
                                 <i className="fa-brands fa-youtube"></i>
-                            </link> 
+                            </a> 
                         </div>
                     </div>
 
@@ -44,22 +44,22 @@ export default function Footer() {
                         </h3>
                         <ul className="footer-list">
                             <li>
-                                <link href="/" className="footer-link">
+                                <Link to={"/"} className="footer-link">
                                     <i className="fa-solid fa-chevron-left footer-link-icon"></i>
                                     الرئيسية
-                                </link> 
+                                </Link> 
                             </li>
                             <li>
-                                <link href="/blog" className="footer-link">
+                                <Link to={"/blog"} className="footer-link">
                                     <i className="fa-solid fa-chevron-left footer-link-icon"></i>
                                     المدونة
-                                </link> 
+                                </Link> 
                             </li>
                             <li>
-                                <link href="/about" className="footer-link">
+                                <Link to={"/about"} className="footer-link">
                                     <i className="fa-solid fa-chevron-left footer-link-icon"></i>
                                     من نحن
-                                </link> 
+                                </Link> 
                             </li>
                         </ul>
                     </div>
@@ -72,28 +72,28 @@ export default function Footer() {
                         </h3>
                         <ul className="footer-list">
                             <li>
-                                <link href="/blog?category=إضاءة" className="footer-link">
+                                <Link to={"/blog?category=إضاءة"} className="footer-link">
                                     <i className="fa-solid fa-chevron-left footer-link-icon"></i>
                                     إضاءة
-                                </link> 
+                                </Link> 
                             </li>
                             <li>
-                                <link href="/blog?category=بورتريه" className="footer-link">
+                                <Link to={"/blog?category=بورتريه"} className="footer-link">
                                     <i className="fa-solid fa-chevron-left footer-link-icon"></i>
                                     بورتريه
-                                </link> 
+                                </Link> 
                             </li>
                             <li>
-                                <link href="/blog?category=مناظر طبيعية" className="footer-link">
+                                <Link to={"/blog?category=مناظر طبيعية"} className="footer-link">
                                     <i className="fa-solid fa-chevron-left footer-link-icon"></i>
                                     مناظر طبيعية
-                                </link> 
+                                </Link> 
                             </li>
                             <li>
-                                <link href="/blog?category=تقنيات" className="footer-link">
+                                <Link to={"/blog?category=تقنيات"} className="footer-link">
                                     <i className="fa-solid fa-chevron-left footer-link-icon"></i>
                                     تقنيات
-                                </link> 
+                                </Link> 
                             </li>
                         </ul>
                     </div>
@@ -132,8 +132,8 @@ export default function Footer() {
                         </div>
                         <div className="col-12 col-md-6">
                             <div className="d-flex gap-4 justify-content-center justify-content-md-end">
-                                <link href="/privacy" className="footer-bottom-link">سياسة الخصوصية</link> 
-                                <link href="/terms" className="footer-bottom-link">شروط الخدمة</link> 
+                                <a href="#" className="footer-bottom-link">سياسة الخصوصية</a> 
+                                <a href="#" className="footer-bottom-link">شروط الخدمة</a> 
                             </div>
                         </div>
                     </div>

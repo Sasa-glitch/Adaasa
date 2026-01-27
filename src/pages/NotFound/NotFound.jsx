@@ -33,11 +33,11 @@ export default function NotFound() {
                     </p>
 
                     <div className="d-flex flex-column flex-sm-row justify-content-center gap-3 mb-5">
-                        <Link href="/" className="btn-hero-primary">
+                        <Link to={"/"} className="btn-hero-primary">
                             <i className="fa-solid fa-home"></i>
                             الذهاب للرئيسية
                         </Link>
-                        <Link href="/blog" className="btn-hero-secondary">
+                        <Link to={"/blog"} className="btn-hero-secondary">
                             <i className="fa-solid fa-blog"></i>
                             تصفح المقالات
                         </Link>
@@ -46,11 +46,11 @@ export default function NotFound() {
                     <div className="notfound-links">
                         <p className="notfound-links-title">قد تجد هذه مفيدة:</p>
                         <div className="d-flex flex-wrap justify-content-center gap-3">
-                            <Link href="/blog" className="notfound-link">المدونة</Link>
+                            <Link to={"/blog"} className="notfound-link">المدونة</Link>
                             <span className="notfound-separator">•</span>
-                            <Link href="/about" className="notfound-link">من نحن</Link>
+                            <Link to={"/about"} className="notfound-link">من نحن</Link>
                             <span className="notfound-separator">•</span>
-                            <Link href="/privacy" className="notfound-link">الخصوصية</Link>
+                            <Link to={"/privacy"} className="notfound-link">الخصوصية</Link>
                         </div>
                     </div>
                 </div>
