@@ -1,5 +1,5 @@
 import React from 'react'
-import { useOutletContext } from 'react-router-dom';
+import { useOutletContext, Link } from 'react-router-dom';
 import Article from '../../components/Article/Article'
 import RecentArticle from '../../components/recentArticle/recentArticle';
 
@@ -33,14 +33,14 @@ export default function Home() {
                         </p>
                         
                         <div className="d-flex flex-column flex-sm-row justify-content-center gap-3 mb-5">
-                            <a href="/blog" className="btn-hero-primary">
+                            <Link href="/blog" className="btn-hero-primary">
                                 <span>استكشف المقالات</span>
                                 <i className="fa-solid fa-arrow-left"></i>
-                            </a>
-                            <a href="/about" className="btn-hero-secondary">
+                            </Link>
+                            <Link href="/about" className="btn-hero-secondary">
                                 <i className="fa-solid fa-circle-info"></i>
                                 <span>اعرف المزيد</span>
-                            </a>
+                            </Link>
                         </div>
                         
                         <div className="row g-3 mx-auto stats-grid">
@@ -92,10 +92,10 @@ export default function Home() {
                             <h2 className="section-title">مقالات مختارة</h2>
                             <p className="section-subtitle">محتوى منتقى لبدء رحلة تعلمك</p>
                         </div>
-                        <a href="/blog" className="btn-view-all">
+                        <Link href="/blog" className="btn-view-all">
                             عرض الكل
                             <i className="fa-solid fa-arrow-left"></i>
-                        </a>
+                        </Link>
                     </div>
 
                     <div className="d-flex flex-column gap-4">
@@ -121,7 +121,7 @@ export default function Home() {
 
                     <div className="row g-4">
                         <div className="col-6 col-md-3">
-                            <a href="/blog?category=إضاءة" className="category-card">
+                            <Link href="/blog?category=إضاءة" className="category-card">
                                 <div className="category-overlay"></div>
                                 <div className="category-content">
                                     <div className="category-icon-wrapper">
@@ -133,10 +133,10 @@ export default function Home() {
                                         <i className="fa-solid fa-chevron-left"></i>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
                         <div className="col-6 col-md-3">
-                            <a href="/blog?category=بورتريه" className="category-card">
+                            <Link href="/blog?category=بورتريه" className="category-card">
                                 <div className="category-overlay"></div>
                                 <div className="category-content">
                                     <div className="category-icon-wrapper">
@@ -148,10 +148,10 @@ export default function Home() {
                                         <i className="fa-solid fa-chevron-left"></i>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
                         <div className="col-6 col-md-3">
-                            <a href="/blog?category=مناظر طبيعية" className="category-card">
+                            <Link href="/blog?category=مناظر طبيعية" className="category-card">
                                 <div className="category-overlay"></div>
                                 <div className="category-content">
                                     <div className="category-icon-wrapper">
@@ -163,10 +163,10 @@ export default function Home() {
                                         <i className="fa-solid fa-chevron-left"></i>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
                         <div className="col-6 col-md-3">
-                            <a href="/blog?category=تقنيات" className="category-card">
+                            <Link href="/blog?category=تقنيات" className="category-card">
                                 <div className="category-overlay"></div>
                                 <div className="category-content">
                                     <div className="category-icon-wrapper">
@@ -178,10 +178,10 @@ export default function Home() {
                                         <i className="fa-solid fa-chevron-left"></i>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
                         <div className="col-6 col-md-3">
-                            <a href="/blog?category=معدات" className="category-card">
+                            <Link href="/blog?category=معدات" className="category-card">
                                 <div className="category-overlay"></div>
                                 <div className="category-content">
                                     <div className="category-icon-wrapper">
@@ -193,7 +193,7 @@ export default function Home() {
                                         <i className="fa-solid fa-chevron-left"></i>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -214,10 +214,10 @@ export default function Home() {
                             <h2 className="section-title">أحدث المقالات</h2>
                             <p className="section-subtitle">محتوى جديد طازج من المطبعة</p>
                         </div>
-                        <a href="/blog" className="text-link">
+                        <Link href="/blog" className="text-link">
                             عرض جميع المقالات
                             <i className="fa-solid fa-arrow-left"></i>
-                        </a>
+                        </Link>
                     </div>
 
                     <div className="row g-4">

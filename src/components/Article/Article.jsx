@@ -1,9 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 export default function Article(props) {
   return (
     <article className="featured-article">
-        <a href={`/blog/${props.post.slug}`} className="row g-0">
+        <Link href={`/blog/${props.post.slug}`} className="row g-0">
             <div className="col-md-6">
                 <div className="featured-image">
                     <img src={props.post.image} alt={props.post.title} />
@@ -50,7 +51,7 @@ export default function Article(props) {
                     </div>
                 </div>
             </div>
-        </a>
+        </Link> 
     </article>
   )
 }

@@ -24,7 +24,7 @@ export default function Navbar() {
             <div className="container-fluid my-bg-tertiary-blur h-100">
                 <div className="row align-items-center h-100">
                     {/* nav brand */}
-                    <a className="navbar-brand d-flex align-items-center gap-3 col-4" href="#">
+                    <Link className="navbar-brand d-flex align-items-center gap-3 col-4" href="#">
                         <figure className='rec-3-rem mb-0'>
                             <img src={logo} alt="imagesss" className='fit-object'/>
                         </figure>
@@ -32,7 +32,7 @@ export default function Navbar() {
                             <span className='h4 mb-0 text-white'>عدسة</span>
                             <span className='small mb-0 d-none d-lg-block my-color-primary'>عالم التصوير الفوتوغرافي</span>
                         </div>
-                    </a>
+                    </Link>
                     {/* nav links for large screens */}
                     <div className='flex-center d-none d-lg-flex col-4'>
                             <div className='position-relative my-bg-tertiary rounded-pill d-flex p-1 my-bg-tertiary nev-margin my-border'>

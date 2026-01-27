@@ -1,10 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function BlogArticleList(props) {
   return (
     <div className="container-fluid mt-4">
         <article className="blog-card-list p-0">
-            <a href="/blog/portrait-photography-secrets" className="row">
+            <Link href="/blog/portrait-photography-secrets" className="row">
                 <div className="col-12 col-md-auto">
                     <div className="blog-card-list-image">
                         <img src={props.post.image} alt={props.post.title}/>
@@ -41,7 +42,7 @@ export default function BlogArticleList(props) {
                     </div>
                 </div>
                 </div>
-            </a>
+            </Link>
         </article>
     </div>
   )

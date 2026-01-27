@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 export default function About() {
     const teamMembers = [
@@ -156,15 +157,15 @@ export default function About() {
                                     <h3 className="team-name">{member.name}</h3>
                                     <p className="team-role">{member.role}</p>
                                     <div className="team-socials">
-                                        <a href="#" className="team-social-link" aria-label="Twitter">
+                                        <link href="#" className="team-social-link" aria-label="Twitter">
                                             <i className="fa-brands fa-x-twitter"></i>
-                                        </a>
-                                        <a href="#" className="team-social-link team-social-github" aria-label="GitHub">
+                                        </link> 
+                                        <link href="#" className="team-social-link team-social-github" aria-label="GitHub">
                                             <i className="fa-brands fa-github"></i>
-                                        </a>
-                                        <a href="#" className="team-social-link team-social-linkedin" aria-label="LinkedIn">
+                                        </link> 
+                                        <link href="#" className="team-social-link team-social-linkedin" aria-label="LinkedIn">
                                             <i className="fa-brands fa-linkedin"></i>
-                                        </a>
+                                        </link> 
                                     </div>
                                 </div>
                             </div>
@@ -185,13 +186,13 @@ export default function About() {
                             نحب أن نسمع منك. سواء كان لديك سؤال حول محتوانا، أو تريد المساهمة، أو تريد فقط إلقاء التحية، لا تتردد في التواصل.
                         </p>
                         <div className="d-flex flex-column flex-sm-row justify-content-center gap-3">
-                            <a href="mailto:hello@adasah.com" className="btn-cta-primary">
+                            <link href="mailto:hello@adasah.com" className="btn-cta-primary">
                                 <i className="fa-regular fa-envelope"></i>
                                 تواصل معنا
-                            </a>
-                            <a href="/blog" className="btn-cta-secondary">
+                            </link> 
+                            <link href="/blog" className="btn-cta-secondary">
                                 تصفح المقالات
-                            </a>
+                            </link> 
                         </div>
                     </div>
                 </div>

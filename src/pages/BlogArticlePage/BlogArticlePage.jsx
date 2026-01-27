@@ -1,5 +1,5 @@
 import React from 'react'
-import { useOutletContext, useParams } from 'react-router-dom'
+import { useOutletContext, useParams, Link } from 'react-router-dom'
 import NotFound from '../NotFound/NotFound';
 
 export default function BlogArticlePage() {
@@ -52,11 +52,11 @@ export default function BlogArticlePage() {
                         {/* Breadcrumb */}
                         <div className="article-breadcrumb-wrapper p-0">
                             <nav className="article-breadcrumb">
-                                <a href="/" className="breadcrumb-link">
+                                <Link href="/" className="breadcrumb-link">
                                     <i className="fa-solid fa-home"></i>
-                                </a>
+                                </Link>
                                 <i className="fa-solid fa-chevron-left breadcrumb-separator"></i>
-                                <a href="/blog" className="breadcrumb-link">المدونة</a>
+                                <Link href="/blog" className="breadcrumb-link">المدونة</Link>
                                 <i className="fa-solid fa-chevron-left breadcrumb-separator"></i>
                                 <span className="breadcrumb-active">{post.category}</span>
                             </nav>
@@ -66,9 +66,9 @@ export default function BlogArticlePage() {
                         <div className="article-header">
                             <div className="container-lg">
                                 <div className="article-meta mb-4">
-                                    <a href="/blog?category=تقنيات" className="article-category-badge">
+                                    <Link href="/blog?category=تقنيات" className="article-category-badge">
                                         {post.category}
-                                    </a>
+                                    </Link>
                                     <div className="d-flex align-items-center gap-4 article-meta-info">
                                         <span className="d-flex align-items-center gap-2">
                                             <i className="fa-regular fa-calendar"></i>
@@ -202,10 +202,10 @@ export default function BlogArticlePage() {
                                         </div>
                                         <nav className="toc-nav">
                                             {sectionsArr.map((title, index) => (
-                                                <a key={title} href={`#section-${index}`} className="toc-link">
+                                                <Link key={title} href={`#section-${index}`} className="toc-link">
                                                     <span className="toc-number">{index + 1}</span>
                                                     <span className="toc-text">{title}</span>
-                                                </a>
+                                                </Link>
                                             ))}
                                         </nav>
                                     </div>
@@ -238,7 +238,7 @@ export default function BlogArticlePage() {
                                             </div>
                                             <h3 className="cta-title">لا تفوّت جديدنا</h3>
                                             <p className="cta-text">اشترك للحصول على أحدث المقالات</p>
-                                            <a href="/blog" className="cta-btn">تصفح المزيد</a>
+                                            <Link href="/blog" className="cta-btn">تصفح المزيد</Link>
                                         </div>
                                     </div>
                                 </div>
@@ -257,16 +257,16 @@ export default function BlogArticlePage() {
                                         <p className="related-subtitle">استكشف المزيد من المحتوى المميز</p>
                                     </div>
                                 </div>
-                                <a href="/blog" className="related-link d-none d-sm-flex">
+                                <Link href="/blog" className="related-link d-none d-sm-flex">
                                     عرض الكل
                                     <i className="fa-solid fa-arrow-left"></i>
-                                </a>
+                                </Link>
                             </div>
 
                             <div className="row g-4">
                                 {recommendPosts.map((article) => (
                                     <div key={article.id} className="col-12 col-sm-6 col-lg-4">
-                                        <a href={`/blog/${article.slug}`} className="related-card">
+                                        <Link href={`/blog/${article.slug}`} className="related-card">
                                             <div className="related-card-image">
                                                 <img src={article.image} alt={article.title} />
                                                 <div className="related-card-overlay"></div>
@@ -282,7 +282,7 @@ export default function BlogArticlePage() {
                                                     <span>{article.readTime}</span>
                                                 </div>
                                             </div>
-                                        </a>
+                                        </Link>
                                     </div>
                                 ))}
                             </div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function NotFound() {
     return (
@@ -32,24 +33,24 @@ export default function NotFound() {
                     </p>
 
                     <div className="d-flex flex-column flex-sm-row justify-content-center gap-3 mb-5">
-                        <a href="/" className="btn-hero-primary">
+                        <Link href="/" className="btn-hero-primary">
                             <i className="fa-solid fa-home"></i>
                             الذهاب للرئيسية
-                        </a>
-                        <a href="/blog" className="btn-hero-secondary">
+                        </Link>
+                        <Link href="/blog" className="btn-hero-secondary">
                             <i className="fa-solid fa-blog"></i>
                             تصفح المقالات
-                        </a>
+                        </Link>
                     </div>
 
                     <div className="notfound-links">
                         <p className="notfound-links-title">قد تجد هذه مفيدة:</p>
                         <div className="d-flex flex-wrap justify-content-center gap-3">
-                            <a href="/blog" className="notfound-link">المدونة</a>
+                            <Link href="/blog" className="notfound-link">المدونة</Link>
                             <span className="notfound-separator">•</span>
-                            <a href="/about" className="notfound-link">من نحن</a>
+                            <Link href="/about" className="notfound-link">من نحن</Link>
                             <span className="notfound-separator">•</span>
-                            <a href="/privacy" className="notfound-link">الخصوصية</a>
+                            <Link href="/privacy" className="notfound-link">الخصوصية</Link>
                         </div>
                     </div>
                 </div>

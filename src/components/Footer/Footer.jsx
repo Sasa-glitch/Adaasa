@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 export default function Footer() {
     return (
@@ -10,28 +11,28 @@ export default function Footer() {
                 <div className="row g-5">
                     {/* Brand Section */}
                     <div className="col-12 col-lg-3">
-                        <a href="/" className="d-flex align-items-center gap-3 mb-4 footer-brand">
+                        <link href="/" className="d-flex align-items-center gap-3 mb-4 footer-brand">
                             <div className="footer-logo">
                                 <span>ع</span>
                             </div>
                             <span className="h5 mb-0 text-white">عدسة</span>
-                        </a>
+                        </link> 
                         <p className="footer-description mb-4">
                             مدونة متخصصة في فن التصوير الفوتوغرافي، نشارك معكم أسرار المحترفين ونصائح عملية لتطوير مهاراتكم.
                         </p>
                         <div className="d-flex gap-2">
-                            <a href="https://twitter.com/adasah" target="_blank" rel="noopener noreferrer" className="footer-social-link" aria-label="twitter">
+                            <link href="https://twitter.com/adasah" target="_blank" rel="noopener noreferrer" className="footer-social-link" aria-label="twitter">
                                 <i className="fa-brands fa-x-twitter"></i>
-                            </a>
-                            <a href="https://github.com/adasah" target="_blank" rel="noopener noreferrer" className="footer-social-link" aria-label="github">
+                            </link> 
+                            <link href="https://github.com/adasah" target="_blank" rel="noopener noreferrer" className="footer-social-link" aria-label="github">
                                 <i className="fa-brands fa-github"></i>
-                            </a>
-                            <a href="https://linkedin.com/company/adasah" target="_blank" rel="noopener noreferrer" className="footer-social-link" aria-label="linkedin">
+                            </link> 
+                            <link href="https://linkedin.com/company/adasah" target="_blank" rel="noopener noreferrer" className="footer-social-link" aria-label="linkedin">
                                 <i className="fa-brands fa-linkedin"></i>
-                            </a>
-                            <a href="https://youtube.com/@adasah" target="_blank" rel="noopener noreferrer" className="footer-social-link" aria-label="youtube">
+                            </link> 
+                            <link href="https://youtube.com/@adasah" target="_blank" rel="noopener noreferrer" className="footer-social-link" aria-label="youtube">
                                 <i className="fa-brands fa-youtube"></i>
-                            </a>
+                            </link> 
                         </div>
                     </div>
 
@@ -43,22 +44,22 @@ export default function Footer() {
                         </h3>
                         <ul className="footer-list">
                             <li>
-                                <a href="/" className="footer-link">
+                                <link href="/" className="footer-link">
                                     <i className="fa-solid fa-chevron-left footer-link-icon"></i>
                                     الرئيسية
-                                </a>
+                                </link> 
                             </li>
                             <li>
-                                <a href="/blog" className="footer-link">
+                                <link href="/blog" className="footer-link">
                                     <i className="fa-solid fa-chevron-left footer-link-icon"></i>
                                     المدونة
-                                </a>
+                                </link> 
                             </li>
                             <li>
-                                <a href="/about" className="footer-link">
+                                <link href="/about" className="footer-link">
                                     <i className="fa-solid fa-chevron-left footer-link-icon"></i>
                                     من نحن
-                                </a>
+                                </link> 
                             </li>
                         </ul>
                     </div>
@@ -71,28 +72,28 @@ export default function Footer() {
                         </h3>
                         <ul className="footer-list">
                             <li>
-                                <a href="/blog?category=إضاءة" className="footer-link">
+                                <link href="/blog?category=إضاءة" className="footer-link">
                                     <i className="fa-solid fa-chevron-left footer-link-icon"></i>
                                     إضاءة
-                                </a>
+                                </link> 
                             </li>
                             <li>
-                                <a href="/blog?category=بورتريه" className="footer-link">
+                                <link href="/blog?category=بورتريه" className="footer-link">
                                     <i className="fa-solid fa-chevron-left footer-link-icon"></i>
                                     بورتريه
-                                </a>
+                                </link> 
                             </li>
                             <li>
-                                <a href="/blog?category=مناظر طبيعية" className="footer-link">
+                                <link href="/blog?category=مناظر طبيعية" className="footer-link">
                                     <i className="fa-solid fa-chevron-left footer-link-icon"></i>
                                     مناظر طبيعية
-                                </a>
+                                </link> 
                             </li>
                             <li>
-                                <a href="/blog?category=تقنيات" className="footer-link">
+                                <link href="/blog?category=تقنيات" className="footer-link">
                                     <i className="fa-solid fa-chevron-left footer-link-icon"></i>
                                     تقنيات
-                                </a>
+                                </link> 
                             </li>
                         </ul>
                     </div>
@@ -131,8 +132,8 @@ export default function Footer() {
                         </div>
                         <div className="col-12 col-md-6">
                             <div className="d-flex gap-4 justify-content-center justify-content-md-end">
-                                <a href="/privacy" className="footer-bottom-link">سياسة الخصوصية</a>
-                                <a href="/terms" className="footer-bottom-link">شروط الخدمة</a>
+                                <link href="/privacy" className="footer-bottom-link">سياسة الخصوصية</link> 
+                                <link href="/terms" className="footer-bottom-link">شروط الخدمة</link> 
                             </div>
                         </div>
                     </div>
