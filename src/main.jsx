@@ -18,8 +18,8 @@ const routes = createBrowserRouter([
         {path: "about", element: <About/>},
         {path: "blog", element: <Blog/>},
         {path: "blog/:slug", element: <BlogArticlePage />},
-        {path: '404', element: <NotFound />},
-        {path: '*', element: <Navigate to='/404' replace />},
+        {path: 'notfound', element: <NotFound />},
+        {path: '*', element: <Navigate to='/notfound' replace />},
     ]}, 
 ], {
     basename: "/Adaasa"
