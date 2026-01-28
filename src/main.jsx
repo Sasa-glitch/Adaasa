@@ -20,6 +20,7 @@ const routes = createBrowserRouter([
         {path: "blog/:slug", element: <BlogArticlePage />},
         {path: '*', element: <NotFound />},
     ]}, 
+    {path: '*', element: <NotFound />},
 ], {
     basename: "/Adaasa"
 })
